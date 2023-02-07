@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Fylo data storage component</title>
+
+<body>
+
+  <!-- wrapper -->
+  <div class="h-screen max-w-screen font-['Raleway'] bg-VeryDarkBlue relative overflow-x-hidden overflow-y-auto lg:overflow-y-hidden">
+
+    <img class="hidden md:block w-full absolute -bottom-[10%] z-0" src="images/bg-desktop.png"
+      alt="blue-design">
+    <img class="block object-fill w-full h-full md:hidden absolute bottom-0" src="images/bg-mobile.png" alt="blue-design">
+
+    <!-- container -->
+
+    <div class="max-w-[1000px] h-full mx-auto flex items-center justify-center relative z-[100]  text-white">
+
+      <!-- inner container -->
+
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-y-8 lg:gap-x-8">
+        
+        <!-- left block-->
+
+        <div class="w-[350px] h-[200px] bg-DarkBlue rounded-xl rounded-tr-[100px]  p-10 shadow-[0_0.625rem_2.25rem_rgba(12,18,44,0.8)]">
+          <img src="images/logo.svg" alt="fylo-logo">
+          <div class="flex gap-x-4 mt-10 items-center">
+            <div class="bg-VeryDarkBlue rounded-lg object-center w-[48px] h-[50px] flex items-center justify-center text-PaleBlue">
+              <img class="object-contain" src="images/icon-document.svg" alt="document">
+            </div>
+            <div class="bg-VeryDarkBlue rounded-lg object-center w-[48px] h-[50px] flex items-center justify-center text-PaleBlue">
+              <img class="object-contain" src="images/icon-folder.svg" alt="folder">
+            </div>
+            <div class="bg-VeryDarkBlue rounded-lg object-center w-[48px] h-[50px] flex items-center justify-center text-PaleBlue">
+              <img class="object-contain" src="images/icon-upload.svg" alt="upload">
+            </div>
+          </div>
+        </div>
+
+        <!-- right block -->
+
+        <div class="w-[350px] lg:w-[550px] h-[170px] rounded-xl p-8 bg-DarkBlue self-end text-[14px] relative shadow-[0_0.625rem_2.25rem_rgba(12,18,44,0.8)]">
+          <p>
+            You’ve used <span class="font-bold">815 GB</span> of your storage
+          </p>
+         
+          <div class="w-full h-[20px] border-[3.5px] border-[#141f49] bg-[#141f49] rounded-3xl mt-4">
+            <div class="w-[80%] h-full rounded-3xl bg-gradient-to-r from-GradientStart to-GradientEnd">
+              <div class="bg-white h-2.5 w-2.5 rounded-full float-right mt-[1px] mr-[2px]"></div>
+            </div>
+          </div>
+
+          <div class="flex justify-between mt-2 font-bold text-sm">
+            <div>0 GB</div>
+            <div>1000 GB</div>
+          </div>
+
+          <!-- popup container -->
+
+          <div class="bg-white h-fit text-VeryDarkBlue absolute -bottom-[20%] right-[25%] lg:-top-[40%] lg:right-[5%] rounded-lg py-2 px-6 space-x-2 z-[150]">
+          <span class="font-bold text-[40px] align-middle">185</span>
+          <span class="font-bold text-GrayishBlue align-middle">GB LEFT</span>
+          </div>
+
+          <!-- down arrow shape -->
+
+          <div class="hidden lg:block absolute top-0 right-[28px] w-0 h-0 border-[1rem] border-l-transparent border-b-transparent border-white z-[120]">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
